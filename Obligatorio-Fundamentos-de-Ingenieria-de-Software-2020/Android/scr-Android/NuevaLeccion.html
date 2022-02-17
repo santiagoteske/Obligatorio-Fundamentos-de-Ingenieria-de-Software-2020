@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NuevaLeccion</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <script src="NuevaLeccion.js"></script>
+  <script src="MenuPrincipal.js"></script>
+  <script src="Store.js"></script>
+  <script src="Leccion.js"></script>
+</head>
+
+<body class="body-nueva-leccion" onload='generaTabla()'></body>
+
+<div class="wrapper">
+</div>
+<div class="aviso-movil-horizontal">
+  <h1 class="aviso-rotar"> Por favor coloque su dispositivo en modo horizontal. </h1>
+  <img src="rotar.jpg" alt="Por favor rote su dispositivo.">
+</div>
+<form action="" method="POST">
+  <ul>
+    <li>
+      <label class="etiqueta-nuevaleccion">CANCIÓN</label>
+      <input class="input-formulario" type="text" id="InputNombreCancion" maxlength="80">
+    </li>
+    <li>
+      <label class="etiqueta-nuevaleccion">INTÉRPRETE</label>
+      <input class="input-formulario" type="text" id="InputInterprete" maxlength="80">
+    </li>
+    <li>
+      <label class="etiqueta-nuevaleccion">DIFICULTAD</label>
+      <select class="select" id="SelectDificultad" class="selector-dificultad">
+        <option value="Fácil" selected>Fácil</option>
+        <option value="Intermedio">Intermedio</option>
+        <option value="Avanzado">Avanzado</option>
+      </select>
+      <label style="margin-right:-8%;margin-left: 7%;" ;="" class="etiqueta-nuevaleccion"> TEMPO: </label>
+      <input class=" input-tempo" id='InputTempo' type="number" min="30" max="220" style="width:8%">
+    </li>
+  </ul>
+</form>
+
+<div id="div-tabla-nueva-leccion" class="div-tabla-nueva-leccion">
+
+</div>
+<div class="div-inferior-nueva-leccion">
+  <button onclick="abrirMenu()" class="boton-atras"></button>
+  <button onclick="cancelar()" class="boton-cancelar"></button>
+  <button onclick="grabar()" class="boton-guardar"></button>
+</div>
+</body>
+
+</html>

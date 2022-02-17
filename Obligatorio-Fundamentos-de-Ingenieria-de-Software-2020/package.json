@@ -1,0 +1,33 @@
+{
+  "name": "ob2-duran-teske-1",
+  "version": "1.0.0",
+  "description": "| |  |\r | ------------ | ------------ |\r | Materia - Evento |Fundamentos de Ingeniería de Software - Obligatorio 2   |\r | Código grupo - Docente:  | M3B - Martin Solari  |\r | Estudiantes del equipo | Alejandro Duran (176652), Santiago Teske (188160)  |\r | Fecha de entrega | 23/11/2020  |\r | URL del repositorio | https://github.com/ORT-FIS-202008/ob2-duran-teske-1.git   |\r --------",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "dev": "nw Src/ ",
+    "prod": "nwbuild --platforms win32,win64 --buildDir dist/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ORT-FIS-202008/ob2-duran-teske-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ORT-FIS-202008/ob2-duran-teske-1/issues"
+  },
+  "homepage": "https://github.com/ORT-FIS-202008/ob2-duran-teske-1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "csscomb": "^4.3.0",
+    "jest": "^26.6.3",
+    "nw": "^0.50.0-sdk",
+    "nw-builder": "^3.5.7"
+  }
+}

@@ -1,0 +1,410 @@
+body {
+  background-attachment: fixed;
+  background-size: 25%;
+  background-color: #000000;
+  position: relative;
+}
+
+.div-inferior-nueva-leccion {
+  padding: 1%;
+}
+
+form {
+  width: 92%;
+  background-color: rgba(51, 51, 51, 0.849);
+}
+form label {
+  width: 26%;
+  font-weight: bold;
+  display: inline-block;
+  color: #ddd;
+}
+form input {
+  width: 40%;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+  display: inline-block;
+}
+.input-tempo {
+  padding-left: -5%;
+  border: 1px solid #f6f6f6;
+  border-radius: 3px;
+  background-color: #333;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.etiqueta-nuevaleccion {
+  font-family: "Roboto", sans-serif;
+  -webkit-text-stroke: 0.9px #00000087;
+  font-size: 1.1em;
+  color: rgb(255, 255, 255);
+  margin-right: 5%;
+}
+
+.select {
+  width: auto;
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+table {
+  font-size: 16px;
+  padding: 1%;
+  text-align: start;
+  width: 50%;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+.input-formulario {
+  font-family: "Roboto", sans-serif;
+  width: 45%;
+  box-sizing: border-box;
+  border: 1px solid white;
+  text-align: justify;
+  background-color: rgba(51, 51, 51, 0.945);
+  color: white;
+}
+
+form li + li {
+  margin-top: 1em;
+  background-color: transparent;
+}
+
+button:hover {
+  border: black;
+}
+
+.tabla-tablatura {
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.tabla-tablatura tr td {
+  text-align: center;
+  white-space: nowrap;
+  overflow: auto;
+  width: "20px";
+}
+
+.selector-dificultad {
+  text-align: left;
+  size: 20%;
+  background-color: #333;
+  color: white;
+}
+.formato-div-menu-principal {
+  text-align: center;
+  margin-top: center;
+  background-color: transparent;
+}
+.formato-div-menu-principal-titulo {
+  text-align: center;
+  background-color: transparent;
+}
+.botones-menu {
+  padding: 2%;
+  font-size: 270%;
+  display: inline-block;
+  margin: 5%;
+  border-radius: 0.45em;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #3369ffe7;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  text-align: center;
+}
+.boton-guardar {
+  background-color: #1e85fc;
+  background-image: url(Save2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 2px double #ffffff;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+  height: 50px;
+  width: 50px;
+  margin: 1%;
+  border-radius: 0.45em;
+  box-sizing: border-box;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.301);
+}
+.boton-cancelar {
+  background-color: #1e85fc;
+  background-image: url(cancel.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 2px double #ffffff;
+  cursor: pointer;
+  transition: all 0.5s;
+  height: 50px;
+  width: 50px;
+  margin: 1%;
+  border-radius: 0.45em;
+  box-sizing: border-box;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.301);
+}
+
+.div-boton-atras {
+  width: 5%;
+  margin-top: -4.5%;
+}
+
+.boton-atras {
+  background-color: #1e85fc;
+  background-image: url(backbw.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 2px double #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+  height: 50px;
+  width: 50px;
+  margin: 1%;
+  border-radius: 0.45em;
+  box-sizing: border-box;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.301);
+}
+.botones-leccion {
+  background-color: #1e85fc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 2px double #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+  height: 50px;
+  width: 50px;
+  margin: 1%;
+  border-radius: 0.45em;
+  box-sizing: border-box;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.301);
+}
+.div-lecciones {
+  background-color: transparent;
+  width: 95%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+.div-botones-leccion {
+  text-align: center;
+  margin-left: 3%;
+}
+/* Comienza estilo de menu dificultad */
+.dropbtn {
+  /*Botones selectores de dificultad y cancion*/
+  /*background-color: #3498db;
+  
+  padding: 1%;
+  
+  border: none;
+  cursor: pointer;
+  border-radius: 6%;*/
+  color: white;
+  font-size: 110%;
+  background-color: #1e85fc;
+  background-size: contain;
+  border: 2px double #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+  height: 45px;
+  margin: 1%;
+  border-radius: 0.45em;
+  box-sizing: border-box;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.301);
+}
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #000000;
+}
+.div-selectores {
+  padding: 1%;
+  position: relative;
+  text-align: left;
+  color: white;
+  font-size: 16px;
+}
+.dropdown-contenido {
+  display: none;
+  position: absolute;
+  background-color: #e1e1e1f2;
+  min-width: 10%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  overflow: auto;
+  max-width: 80%;
+  max-height: 80%;
+  font-family: "Roboto", sans-serif;
+}
+
+.etiquetas {
+  margin-top: 0%;
+  font-family: "Roboto", sans-serif;
+  font-size: 120%;
+  display: inline-block;
+}
+
+.botones-arriba {
+  width: 37%;
+  display: inline-flex;
+}
+
+.dropdown-contenido a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+/*Finaliza estilo de menu dificultad */
+
+/*Estilo de elementos de drop con busqueda */
+#entrada {
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+#entrada:focus {
+  outline: 3px solid #ddd;
+}
+.show {
+  display: block;
+}
+
+/*Fin de estilo elementos menu drop con busqueda*/
+
+.div-tabla-nueva-leccion {
+  /*background-color: rgba(129, 129, 129, 0.904);*/
+  background-color: rgba(51, 51, 51, 0.973);
+  overflow: auto;
+  white-space: inherit;
+  width: 90%;
+  padding: 1%;
+  color: #ddd;
+}
+
+/*Comienza visualizador de lecciones*********************/
+.scroll-leccion {
+  background-color: #333;
+  overflow: auto;
+  white-space: inherit;
+  width: 100%;
+  padding: 1%;
+  margin-top: 3%;
+}
+
+.scroll-leccion table {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.scroll-leccion a:hover {
+  background-color: #777;
+}
+.body-nueva-leccion {
+  background-image: url(Fondo2.png);
+  margin-left: 6%;
+  margin-top: 1%;
+}
+.body-nueva-leccion::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.body-lecciones {
+  background-image: url(Fondo2.png);
+}
+.body-lecciones::before {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  max-width: 100%;
+  max-height: 100%;
+  background-size: 100%;
+}
+.label-velocidad-leccion {
+  font-size: 16px;
+  color: #ddd;
+  background-color: #000000b0;
+}
+.labeles-superiores-leccion {
+  font: 18px;
+  color: #ddd;
+  background-color: #000000b0;
+  -webkit-text-stroke: 1px black;
+}
+
+.aviso-movil-horizontal {
+  display: none;
+}
+
+@media only screen and (orientation: portrait) {
+  .wrapper {
+    display: none;
+  }
+  .aviso-movil-horizontal {
+    display: block;
+    text-align: center;
+    width: 110%;
+    height: 1000%;
+    background: #404040;
+    position: absolute;
+    margin-left: -7%;
+    margin-top: -10%;
+    z-index: 500;
+  }
+}
+@media only screen and (orientation: landscape) {
+  .aviso-movil-horizontal {
+    display: none;
+  }
+}
+
+.aviso-rotar {
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  color: white;
+  margin-top: 50%;
+  width: 95%;
+  margin-left: 4%;
+}

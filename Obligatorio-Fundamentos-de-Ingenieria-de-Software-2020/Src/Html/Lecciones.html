@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecciones</title>
+  <link rel="stylesheet" href="../Styles/Style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+  <script src="../Scripts/Lecciones.js"></script>
+  <script src="../Scripts/MenuPrincipal.js"></script>
+  <script src="../Scripts/Store.js"></script>
+
+</head>
+
+<body class="body-lecciones"></body>
+<div class="wrapper">
+</div>
+<div class="aviso-movil-horizontal">
+  <h1 class="aviso-rotar"> Por favor coloque su dispositivo en modo horizontal. </h1>
+  <img src="../Imagenes/rotar.jpg" alt="Por favor rote su dispositivo.">
+</div>
+<div class="div-lecciones">
+
+  <div class="div-selectores">
+    <div class="botones-arriba">
+      <button id="button-dificultad" onclick="mostrarOEsconder()" class="dropbtn">Dificultad</button>
+      <div id="dropdown-dificultad" class="dropdown-contenido">
+        <a onclick="setearDificultadFacil()"> Fácil</a>
+        <a onclick="setearDificultadIntermedio()">Intermedio</a>
+        <a onclick="setearDificultadAvanzado()">Avanzado</a>
+        <a onclick="setearDificultadTodas()">Todas</a>
+      </div>
+
+      <button onclick="MuestraDropLecciones();CargarLecciones()" class="dropbtn">Canciones</button>
+      <div id="dropLecciones" class="dropdown-contenido"></div>
+    </div>
+    <div class="etiquetas">
+      <label id="label-dificultad" class="labeles-superiores-leccion">Dificultad:</label>
+      <label id="label-cancion" class="labeles-superiores-leccion">Canción: </label>
+      <label id="label-interprete" class="labeles-superiores-leccion">Intérprete: </label>
+      <label id="label-tempo" class="labeles-superiores-leccion">Tempo: </label>
+      <label id="label-tempo-valor" class="labeles-superiores-leccion"> </label>
+    </div>
+    <div id="div-scroll" class="scroll-leccion">
+      <table id="tablatura-cancion-seleccion">
+
+      </table>
+    </div>
+
+
+    <div class="div-botones-leccion">
+      <button onclick="irAInicio()" class="botones-leccion"><img src="../Imagenes/inicio.svg" alt="|<"> </button>
+      <button id="boton-play" onclick="startScroll()" class="botones-leccion"><img src="../Imagenes/play.svg"
+          alt="Play"></button>
+      <button id="boton-stop" onclick="parar()" class="botones-leccion"><img src="../Imagenes/pause.svg"
+          alt="||"></button>
+      <button onclick="irAFinal()" class="botones-leccion"><img src="../Imagenes/final.svg" alt=">|"> </button>
+    </div>
+    <div class="div-boton-atras">
+      <button onclick="abrirMenu()" class="boton-atras"></button>
+    </div>
+  </div>
+
+  </body>
+
+</html>

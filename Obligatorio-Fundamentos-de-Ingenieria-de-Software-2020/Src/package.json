@@ -1,0 +1,16 @@
+{
+  "name": "aprende-guitarra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "html/MenuPrincipal.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window":{
+    "title":"Aprende Guitarra",
+    "toolbar": false
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
